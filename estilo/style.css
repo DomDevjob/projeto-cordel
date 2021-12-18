@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/*fonte 1 do google*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/*fonte 2 do google*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1:  Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font2);
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    letter-spacing: 1.8px;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a{
+    color: rgb(218, 199, 199);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-style: italic;
+    font-family: var(--font3);
+    font-size: 3.2vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    text-shadow: rgba(40, 3, 3, 0.181) 3px 0px 1px;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.281);
+    color: white;
+    text-shadow: rgba(255, 255, 255, 0.174) 3px 0px 1px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.53);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.557);
+    display: inline-block;
+    padding: 5px;
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
